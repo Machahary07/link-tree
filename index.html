@@ -6,7 +6,7 @@
   <title>Machahary07 — Links</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     html, body { height: 100%; overflow: hidden; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -16,8 +16,10 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      height: 100dvh;
       width: 100vw;
       position: relative;
+      padding: 24px 16px;
     }
 
     .orbs {
@@ -108,10 +110,25 @@
     .link i { font-size: 18px; }
     footer {
       position: fixed;
-      bottom: 16px;
+      bottom: max(16px, env(safe-area-inset-bottom));
       z-index: 2;
       font-size: 12px;
       color: rgba(255,255,255,0.4);
+    }
+
+    @media (max-width: 480px) {
+      .card { gap: 22px; }
+      .avatar { width: 84px; height: 84px; }
+      .handle { font-size: 18px; }
+      .bio { font-size: 13px; }
+      .link { padding: 13px 16px; font-size: 14px; }
+      .link i { font-size: 17px; }
+    }
+    @media (max-height: 600px) {
+      .card { gap: 16px; }
+      .avatar { width: 72px; height: 72px; }
+      .links { gap: 10px; }
+      .link { padding: 11px 16px; }
     }
   </style>
 </head>
