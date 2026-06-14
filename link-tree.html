@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machahary07 — Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    .orbs {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.95;
+    }
+    .orb.red-1 {
+      width: 520px; height: 520px;
+      top: -120px; left: -100px;
+      background: radial-gradient(circle, rgba(255,30,60,1) 0%, rgba(255,30,60,0.6) 25%, rgba(255,30,60,0) 70%);
+    }
+    .orb.purple-1 {
+      width: 600px; height: 600px;
+      top: 30%; right: -180px;
+      background: radial-gradient(circle, rgba(168,50,255,1) 0%, rgba(168,50,255,0.55) 28%, rgba(168,50,255,0) 70%);
+    }
+    .orb.red-2 {
+      width: 420px; height: 420px;
+      bottom: -120px; left: 25%;
+      background: radial-gradient(circle, rgba(230,20,90,1) 0%, rgba(230,20,90,0.55) 25%, rgba(230,20,90,0) 70%);
+    }
+    .orb.purple-2 {
+      width: 380px; height: 380px;
+      top: 10%; left: 40%;
+      background: radial-gradient(circle, rgba(120,40,220,1) 0%, rgba(120,40,220,0.5) 25%, rgba(120,40,220,0) 70%);
+    }
+
+    .glass {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(80px) saturate(120%);
+      -webkit-backdrop-filter: blur(80px) saturate(120%);
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: min(420px, 90vw);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: #1a1a1a;
+    }
+    .handle { font-size: 20px; font-weight: 600; color: #fff; }
+    .bio { font-size: 14px; color: rgba(255,255,255,0.6); text-align: center; }
+    .links { width: 100%; display: flex; flex-direction: column; gap: 14px; }
+    .link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0.08) 100%);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.25),
+        inset 0 -1px 0 rgba(255,255,255,0.06),
+        0 0 24px rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .link i { font-size: 18px; }
+    footer {
+      position: fixed;
+      bottom: 16px;
+      z-index: 2;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="orbs">
+    <div class="orb red-1"></div>
+    <div class="orb purple-1"></div>
+    <div class="orb red-2"></div>
+    <div class="orb purple-2"></div>
+  </div>
+  <div class="glass"></div>
+
+  <main class="card">
+    <img class="avatar" src="https://scontent.cdninstagram.com/v/t51.82787-19/625621475_17885952423434236_6607624469192159884_n.jpg?_nc_cat=104&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=UMwBRlmqtQMQ7kNvwH8hmun&_nc_oc=AdoPqsor5oTd0ia7sT7a_8PrVtFb7bSPUiZz_FiEMcEticRMtcfcIjtRgI93W3nf81o&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=KrNY_leVVgDYOTORLRQ8UQ&_nc_ss=7aaaf&oh=00_Af9kDgwQ7xnOYzAh1-pT07v2fylmtfh9acH_22JcByGoNw&oe=6A342143" alt="Profile" referrerpolicy="no-referrer" />
+    <div class="handle">@machahary07</div>
+    <div class="bio">Find me on the web</div>
+    <nav class="links">
+      <a class="link" href="https://github.com/Machahary07" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" style="color: #fff;"></i>
+        <span>@Machahary07</span>
+      </a>
+      <a class="link" href="https://x.com/machahary07" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-x-twitter" style="color: #fff;"></i>
+        <span>@machahary07</span>
+      </a>
+      <a class="link" href="https://instagram.com/__.m07___/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+        <span>@__.m07___</span>
+      </a>
+    </nav>
+  </main>
+  <footer>© Machahary07</footer>
+</body>
+</html>
